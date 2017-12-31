@@ -1,0 +1,11 @@
+runtime: python
+env: flex
+api_version: 1
+
+handlers:
+- url: (.*)/
+  static_files: static\1/index.html
+  upload: static/index.html
+
+- url: /
+  static_dir: static
